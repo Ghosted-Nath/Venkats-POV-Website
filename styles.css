@@ -1,0 +1,34 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+    color: aqua;
+}
+
+h1{
+    color: gold;
+}
+
+hr.gold {
+    border: none;
+    height: 2px;
+    background-color: gold;
+    width: 60%;
+    margin: 20px auto;
+}
+
+a {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+}
