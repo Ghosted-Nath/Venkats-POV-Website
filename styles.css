@@ -14,6 +14,7 @@ ol {
 
 h1{
     color: gold;
+    align-items: center;
 }
 
 hr.gold {
@@ -37,4 +38,9 @@ a:hover {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+img {
+    align-items: center;
+    size: 20px;
 }
