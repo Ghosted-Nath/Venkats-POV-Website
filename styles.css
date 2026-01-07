@@ -3,13 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
 }
 
 body {
     color: white;
     font-family: "Oswald", sans-serif;
     overflow-x: hidden;
+    text-align: center;
 }
 
 
@@ -82,26 +82,31 @@ hr.gold {
     font-weight: 400;
 }
 
-/* VIDEO BACKGROUND */
-.bg-video {
-    position: fixed;
+.video-wrapper {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
     z-index: -1;
 }
 
 
+.bg-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+    /* 👇 crop control */
+    transform: scale(1.26) translateY(-6%);
+}
+
+
 .video-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 nav,
